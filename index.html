@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <!-- Via js -->
+    </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="navTtitle" href="index.html" class="navbar-brand">
+                    <!-- Via js --></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="desc" placeholder="Descrição">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="amount" placeholder="Quantidade">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="value" placeholder="Valor">
+            </div>
+            <span id="btnUpdate" style="display: none;">
+                <span id="inputIdUpdate"></span>
+                <button onclick="updateData();" class="btn btn-default">Salvar</button>
+                <button onclick="resetForm();" class="btn btn-default">Cancelar</button>
+            </span>
+            <button id="btnAdd" onclick="addData();" class="btn btn-default">Adicionar</button>
+        </div>
+        <br>
+        <div id="errors" style="display: none;"></div>
+
+        <table id="listTable" class="table">
+            <!-- Via js -->
+        </table>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <h4 class="text-center text-success">Total: <span id="totalValue">R$ 0,00</span></h4>
+        </div>
+    </nav>
+
+
+    <script src="./js/config.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
